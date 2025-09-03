@@ -1,0 +1,63 @@
+:root {
+  --display: "Fraunces", serif;
+  --text: "Inter", system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../img/pexels-narda-yescas-724842-1566837.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+header,
+footer {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  height: 70px;
+}
+
+nav button {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 1.4rem;
+  border-radius: 25px;
+  font-family: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  color: inherit;
+}
+
+nav button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav button:active {
+  transform: translateY(0);
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

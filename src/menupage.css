@@ -1,0 +1,33 @@
+.pizza-img {
+  min-width: 50px;
+  width: 180px;
+}
+
+.menu-card {
+  display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.menu-info {
+  padding: 10px 25px;
+}
+
+body[data-page="menu"] #content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+body[data-page="menu"] main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 2rem 0;
+}
+
+body {
+  overflow: scroll;
+}

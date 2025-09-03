@@ -1,0 +1,24 @@
+body[data-page="about"] #content,
+body[data-page="about"] .para-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.para-container {
+  max-width: 1500px;
+}
+
+body[data-page="about"] main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+html {
+  background-color: white;
+}
